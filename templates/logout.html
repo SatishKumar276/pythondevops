@@ -1,0 +1,21 @@
+<!-- result_page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>You are logged out</h3>
+            <h4>Thanks for visiting</h4>
+        </div>
+        <div>
+            <a href="{{ url_for('login') }}">Log in Again</a>
+        </div>
+    </div>
+</body>
+</html>

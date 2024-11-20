@@ -1,0 +1,20 @@
+<!-- result_page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>World Happiness Prediction Result</h2>
+        <p>The predicted happiness score based on your inputs is: <strong>{{ result }}</strong></p>
+        <a href="{{ url_for('input_page') }}">Go back and try again</a>
+        <div>
+            <a href="{{ url_for('logout') }}">Click to logout</a>
+        </div>
+    </div>
+</body>
+</html>

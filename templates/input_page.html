@@ -1,0 +1,36 @@
+<!-- input_page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Happiness Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Enter the Details for World Happiness Prediction</h2>
+        <form action="{{ url_for('input_page') }}" method="POST">
+            <label for="gdp">GDP per Capita:</label>
+            <input type="text" id="gdp" name="gdp" placeholder="Enter GDP per capita" required><br><br>
+
+            <label for="life_expectancy">Life Expectancy (in years):</label>
+            <input type="text" id="life_expectancy" name="life_expectancy" placeholder="Enter Life Expectancy" required><br><br>
+
+            <label for="social_support">Social Support Score (0 to 1):</label>
+            <input type="text" id="social_support" name="social_support" placeholder="Enter Social Support Score" required><br><br>
+
+            <label for="freedom">Freedom to Make Life Choices (0 to 1):</label>
+            <input type="text" id="freedom" name="freedom" placeholder="Enter Freedom Score" required><br><br>
+
+            <label for="generosity">Generosity (0 to 1):</label>
+            <input type="text" id="generosity" name="generosity" placeholder="Enter Generosity Score" required><br><br>
+
+            <label for="corruption">Perceived Corruption (0 to 1):</label>
+            <input type="text" id="corruption" name="corruption" placeholder="Enter Corruption Score" required><br><br>
+
+            <button type="submit">Predict Happiness</button>
+        </form>
+    </div>
+</body>
+</html>
